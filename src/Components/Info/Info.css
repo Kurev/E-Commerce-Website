@@ -1,0 +1,29 @@
+.services-container{
+    width: 100%;
+    min-height: 150px;
+    background-color: rgb(232, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.services1, .services2, .services3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.services1 h1, .services2 h1, .services3 h1{
+    display: flex;
+    align-items: center;    
+    font-size: 60px;
+    color: #05ff5d;
+}
+
+.services1 p, .services2 p, .services3 p{
+    color: rgba(0, 0, 0, 0.614);
+}

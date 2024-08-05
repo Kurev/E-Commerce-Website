@@ -1,0 +1,91 @@
+.contact{
+    margin: 100px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+}
+
+.contact .title{
+    margin-top: 20px;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background:#EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.contact-col span{
+    display: block;
+    margin: 20px 0;
+}
+
+.title h1{
+    color: #05ff5d;
+    font-size: 40px;
+    margin-left: 73px;
+    margin-top: -60px;
+}
+
+.contact-image{
+    padding: 0px 20%;
+    margin-top: 10px;
+}
+
+.contact-image .con-image{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+    
+}
+
+.sub-text{
+    margin-left: 60px;
+}
+
+.contact-image .social-conatct{
+    margin-top: -404px;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.621);
+    border-radius: 20px;
+    position: relative;
+    padding: 30px 0px 0px 30px;
+    line-height: 3.3;
+    color: white;
+    font-size: 17px;
+    box-shadow: 5px 6px 5px 0px rgba(0, 0, 0, 0.785);
+}
+
+.social-conatct .cont-icon{
+    margin-right: 10px;
+    margin-bottom: -7px;
+    font-size: 27px;
+    color:#05ff5d;
+}
+
+.cont-info{
+    margin-top: 100px;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.622);
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+

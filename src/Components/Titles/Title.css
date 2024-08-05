@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.563);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 90px 0 60px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.title h2{
+    font-size: 55px;
+    color: #05ff5d;
+    margin-top: 5px;
+    text-transform: none;
+}
