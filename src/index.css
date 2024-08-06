@@ -32,3 +32,7 @@ button {
     font-size: 23px;
     line-height: 0;
 }
+
+ul li{
+    list-style: none;
+}
