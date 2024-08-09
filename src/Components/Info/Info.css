@@ -1,5 +1,5 @@
 .services-container{
-    width: 100%;
+    max-width: 100%;
     min-height: 150px;
     background-color: rgb(232, 228, 228);
     display: flex;
@@ -8,6 +8,7 @@
     padding: 0px 10%;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
+    flex-wrap: wrap;
 }
 
 .services1, .services2, .services3{

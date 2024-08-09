@@ -22,7 +22,7 @@ const Collection = () => {
       }
     }
   };
-
+  
   return (
     <div className='collection-container'>
       <motion.div className='collection' variants={variants} animate="animate">

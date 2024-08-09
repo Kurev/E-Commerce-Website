@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { fadeIn } from '../../animations/FadeIn';
 
 const Hero = () => {
   return (

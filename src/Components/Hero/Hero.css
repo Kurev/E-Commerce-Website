@@ -1,5 +1,5 @@
 .hero{
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(5, 68, 41, 0.6)),  url('../../assets/hero1.png')  no-repeat center center;
     display: flex;
@@ -51,6 +51,60 @@
     font-size: 85px;
 }
 
+@media screen and (max-width: 1040px) {
+
+    .hero{
+        padding: 0px 50px;
+    }
+
+    .hero-text h1{
+        font-size: 100px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero-text h1{
+        font-size: 90px;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .hero-text h1{
+        font-size: 60px;
+    }
+
+    .fur{
+        font-size: 60px;
+    }
+    
+    .nature{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1, .fur, .nature{
+        font-size: 50px;
+    }  
+}
+
+@media screen and (max-width: 380px) {
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .fur{
+        font-size: 40px;
+    }
+    
+    .nature{
+        font-size: 40px;
+    }  
+}
 
 
 

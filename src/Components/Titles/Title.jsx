@@ -1,6 +1,6 @@
 import React from 'react'
 import './Title.css'
-import { fadeIn } from '../../variants'
+import { fadeIn } from '../../animations/FadeIn'
 import { motion } from 'framer-motion'
 
 const Title = ({ title, subTitle }) => {

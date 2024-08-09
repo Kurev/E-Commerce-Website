@@ -4,7 +4,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { Ri24HoursFill } from "react-icons/ri";
 import { IoShieldHalf } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { fadeIn } from '../../variants';
+import { fadeIn } from '../../animations/FadeIn';
 
 
 
@@ -30,7 +30,7 @@ const Info = () => {
                 </div>  
         </motion.div>
         <motion.div 
-            variants={fadeIn("down", 0.2)}
+            variants={fadeIn("down", 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.7}}
@@ -48,7 +48,7 @@ const Info = () => {
 
         </motion.div>
         <motion.div 
-            variants={fadeIn("down", 0.2)}
+            variants={fadeIn("down", 0.5)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.7}}

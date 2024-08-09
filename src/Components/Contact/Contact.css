@@ -6,6 +6,7 @@
     justify-content: space-between;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
+    flex-wrap: wrap;
 }
 
 .contact-col{
