@@ -84,6 +84,10 @@
     .nature{
         font-size: 60px;
     }
+
+    .hero-text p{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 400px) {
