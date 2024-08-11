@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Title = ({ title, subTitle }) => {
   return (
     <div className="title-container">
-        <div className='title'>
+        <div className='caption'>
           <motion.h2
             variants={fadeIn("right", 0)}
             initial='hidden'
@@ -22,7 +22,7 @@ const Title = ({ title, subTitle }) => {
           
             >{subTitle}
           </motion.p>
-      </div>
+        </div>
     </div>
     
   )

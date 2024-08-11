@@ -23,6 +23,24 @@
     margin-bottom: 20px;
 }
 
+.highlighted-text {
+    display: inline-block;
+}
+
+.fur, .nature {
+    display: inline;
+    font-size: 85px;
+}
+
+.fur {
+    margin-left: 15px;
+    color: black;
+}
+
+.nature {
+    color: #05ff5d;
+}
+
 .hero-text p{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -38,19 +56,6 @@
     color: black;
 }
 
-.fur{
-    display: inline-block;
-    font-size: 85px;
-    color: black;
-}
-
-.nature{
-    display: inline-block;
-    margin-left: -25px;
-    color: #05ff5d;
-    font-size: 85px;
-}
-
 @media screen and (max-width: 1040px) {
 
     .hero{
@@ -58,7 +63,6 @@
     }
 
     .hero-text h1{
-        font-size: 100px;
         margin-bottom: 20px;
         line-height: 1;
     }
@@ -78,6 +82,7 @@
     }
 
     .fur{
+        margin-right: 8px;
         font-size: 60px;
     }
     
@@ -91,7 +96,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    h1{
+    .hero-text h1{
         font-size: 50px;
     }  
 
@@ -104,7 +109,7 @@
     }  
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 391px) {
     .hero-text h1{
         font-size: 40px;
     }
@@ -114,12 +119,7 @@
     }
     
     .nature{
-        margin-left: -12px;
+        margin-left: -8px;
         font-size: 40px;
     }  
 }
-
-
-
-
-

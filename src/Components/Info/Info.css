@@ -1,6 +1,5 @@
 .services-container{
-    max-width: 100%;
-    min-height: 150px;
+    min-width: 100%;
     background-color: rgb(232, 228, 228);
     display: flex;
     justify-content: space-between;
@@ -85,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
     .services-container{
         padding-left: 15%;
         padding-right: 15%;
@@ -105,12 +104,12 @@
     }
 
     .services1, .services2, .services3{
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 35px;
+        margin-bottom: 13px;
     }
 
     .services3{
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
     .detail1{
