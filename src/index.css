@@ -36,3 +36,11 @@ button {
 ul li{
     list-style: none;
 }
+
+@media screen and (max-width: 500px) {
+    button{
+        width: 130px;
+        height: 35px;
+        font-size: 12px;
+    }
+}

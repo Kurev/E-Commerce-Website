@@ -91,7 +91,15 @@
 }
 
 @media screen and (max-width: 400px) {
-    h1, .fur, .nature{
+    h1{
+        font-size: 50px;
+    }  
+
+    .fur{
+        font-size: 50px;
+    }
+    
+    .nature{
         font-size: 50px;
     }  
 }
@@ -106,6 +114,7 @@
     }
     
     .nature{
+        margin-left: -12px;
         font-size: 40px;
     }  
 }

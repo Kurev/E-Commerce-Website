@@ -16,6 +16,7 @@
     align-items: center;
     gap: 30px;
     height: 100%;
+    
 }
 
 .services1 h1, .services2 h1, .services3 h1{
@@ -23,8 +24,98 @@
     align-items: center;    
     font-size: 60px;
     color: #05ff5d;
+    cursor: pointer;
 }
 
 .services1 p, .services2 p, .services3 p{
     color: rgba(0, 0, 0, 0.614);
 }
+
+@media screen and (max-width: 1200px) {
+    .services-container{
+        padding: 0px 5%;
+        min-height: 120px;
+    }
+
+    .services1 h1, .services2 h1, .services3 h1{
+        font-size: 45px;
+    }
+    
+    .services1 p, .services2 p, .services3 p{
+        color: rgba(0, 0, 0, 0.614);
+        font-size: 13px;
+    }
+
+    .services1, .services2, .services3{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 100%;
+    }
+
+    .detail1{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+    .services-container{
+        flex-wrap: nowrap;
+    }
+
+    .services1 h1, .services2 h1, .services3 h1{
+        font-size: 35px;
+        
+    }
+    
+    .services1 p, .services2 p, .services3 p{
+        color: rgba(0, 0, 0, 0.614);
+        font-size: 11px;
+    }
+
+    .services1, .services2, .services3{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .detail1{
+        font-size: 15px;
+        
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .services-container{
+        padding-left: 15%;
+        padding-right: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .services1 h1, .services2 h1, .services3 h1{
+        font-size: 50px;
+        
+    }
+    
+    .services1 p, .services2 p, .services3 p{
+        color: rgba(0, 0, 0, 0.614);
+        font-size: 13px;
+    }
+
+    .services1, .services2, .services3{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .services3{
+        margin-bottom: 30px;
+    }
+
+    .detail1{
+        font-size: 20px;
+        
+    }
+}
+
