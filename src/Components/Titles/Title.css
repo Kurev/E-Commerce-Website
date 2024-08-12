@@ -1,0 +1,25 @@
+.title-container{
+    max-width: 100%;
+    background-color: red;
+}
+
+.title-container .title{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.563);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.title-container .title p{
+    min-width: 10%;
+}
+
+.title h2{
+    font-size: 35px;
+    color: #05ff5d;
+    margin-top: 5px;
+}

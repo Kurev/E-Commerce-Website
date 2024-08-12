@@ -42,7 +42,7 @@ const Contact = ({ title, subTitle}) => {
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.1}}
                 
-                    className="contact-title">
+                    className="title">
                         <h1>{title}</h1>
                         <p className='sub-text'>{subTitle}</p>
                 </motion.div>

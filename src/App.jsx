@@ -13,12 +13,12 @@ function App() {
   return (
     <>
       <div className="container">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         <Info />
         <Title className='titl' title='Our Collection' subTitle='This collection showcases the craftsmanship of our expert furniture makers.'/>
-        {/* <Collection /> */}
-        {/* <Title title='The Crafting Process' subTitle='The Crafting Process showcases the intricate steps our artisans take to create each piece.'/>
+        {/* <Collection />
+        <Title title='The Crafting Process' subTitle='The Crafting Process showcases the intricate steps our artisans take to create each piece.'/>
         <Details />
         <Contact title="Let's Get In Tourch."  subTitle="Contact us to learn more"/>
         <Footer /> */}
