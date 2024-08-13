@@ -60,6 +60,7 @@ const Details = () => {
                                     opacity: 0
                                 }}
                                 transition={{duration: 0.5}}
+                                viewport={{once: false, amount: window.innerWidth > 1068 ? 0.2 : 0.7}}
                             className="details">
                                 <p>Durable, versatile table perfect for enhancing any kitchen or dining area with convenience and style.</p>
                                 <p className='price'>₱4,500</p>
@@ -78,7 +79,7 @@ const Details = () => {
         whileInView={'show'}
         viewport={{once: false, amount: 0.7}}
       
-          className="context-container">
+        className="context-container">
             <h1>Artistry<FaHammer className='hammer'/></h1>
             <p><h4>Designing:</h4> Conceptualizing the piece with sketches and detailed plans.</p>
             <p><h4>Selecting Materials:</h4> Choosing high-quality materials for durability and aesthetics.</p>

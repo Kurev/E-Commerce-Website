@@ -3,7 +3,7 @@
     min-height: 55vh;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 40px;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,4 +113,36 @@
   .hammer{
     margin-left: 10px;
   }
-  
+
+  @media screen and (max-width: 1030px) {
+   
+
+    .context-container{
+      width: 100%;
+      margin: 0 70px;
+      margin-left: 90px;
+    }
+  }
+
+  @media screen and (max-width: 830px) {
+   
+
+    .context-container{
+      min-width: 120%;
+      margin: 0 70px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 260px;
+      margin-top: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 830px) {
+   
+
+    .context-container{
+      margin-left: 200px;
+    }
+
+  }

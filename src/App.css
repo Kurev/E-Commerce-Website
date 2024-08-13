@@ -1,0 +1,13 @@
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .container {
+        overflow-x: hidden;
+    }
+}

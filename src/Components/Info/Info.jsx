@@ -16,7 +16,7 @@ const Info = () => {
             variants={fadeIn("down", 0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount:  0.7}}
+            viewport={{once: false, amount: window.innerWidth < 768 ? 0.2 : 0.7}}
             
             className="services1">
                 <motion.h1
@@ -33,7 +33,7 @@ const Info = () => {
             variants={fadeIn("down", 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount:  0.7}}
+            viewport={{once: false, amount: window.innerWidth < 768 ? 0.2 : 0.7}}
 
             className="services2">
                 <motion.h1
@@ -51,7 +51,7 @@ const Info = () => {
             variants={fadeIn("down", 0.5)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount: 0.7}}
+            viewport={{once: false, amount: window.innerWidth < 768 ? 0.2 : 0.7}}
             
             className="services3">
                 <motion.h1

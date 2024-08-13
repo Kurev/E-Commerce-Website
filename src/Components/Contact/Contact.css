@@ -13,8 +13,15 @@
     flex-basis: 48%;
 }
 
-.contact .title{
+
+.cont-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
+    margin-left: 80px;
 }
 
 .contact form input, .contact form textarea{
@@ -87,6 +94,33 @@
     color: rgba(255, 255, 255, 0.622);
     font-size: 14px;
     padding-right: 30px;
+}
+
+@media screen and (max-width: 1030px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .cont-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
 }
 
 
