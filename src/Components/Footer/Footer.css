@@ -70,3 +70,65 @@ li:hover{
 .second-container .icons .icon:hover{
     color: #05ff5d81;
 }
+
+@media screen and (max-width: 1200px) {
+    .first-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SubTitle-footer .list1{
+        margin-left: 0px;
+    }
+
+    .SubTitle-footer .list1, .list2, .list3{
+        margin-right: 160px;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+
+    .SubTitle-footer .list1, .list2, .list3{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+
+    .SubTitle-footer .list1, .list2, .list3{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+
+    .Title-footer p{
+        padding-right: 120px ;
+    }
+
+    .SubTitle-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SubTitle-footer .list1, .list2, .list3{
+        margin-left: 0px;
+    }
+
+    .SubTitle-footer .list1, .list2{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .Title-footer p{
+        padding-right: 190px ;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .Title-footer p{
+        padding-right: 215px ;
+    }
+}
+

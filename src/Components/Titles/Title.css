@@ -25,7 +25,6 @@
 
 @media screen and (max-width: 830px) {
     .title-container h2{
-        font-size: 35px;
         color: #05ff5d;
         padding-left: 10%;
         padding-right: 10%;
@@ -41,6 +40,7 @@
 
 @media screen and (max-width: 634px) {
     .title-container h2{
+        font-size: 35px;
         padding-left: 10%;
         padding-right: 10%;
     }

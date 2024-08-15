@@ -55,6 +55,9 @@
     font-size: 40px;
     
 }
+.cont-title p{
+    color:rgba(0, 0, 0, 0.621)
+}
 
 .contact-image{
     padding: 0px 20%;
