@@ -10,14 +10,14 @@ const Title = ({ title, subTitle }) => {
         variants={fadeIn("right", 0)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
+        viewport={{once: false, amount: window.innerWidth < 350 ? 0.2 : 0.7}}
           >{title}
       </motion.h2>
       <motion.p
         variants={fadeIn("left", 0)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
+        viewport={{once: false, amount: window.innerWidth < 350 ? 0.2 : 0.7}}
       
         > {subTitle}
       </motion.p>

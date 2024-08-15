@@ -6,7 +6,6 @@
     flex-direction: column;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
-    flex-wrap: wrap;
     margin: 80px 0px;
 }
 
@@ -26,16 +25,35 @@
 
 @media screen and (max-width: 830px) {
     .title-container h2{
-        font-size: 45px;
+        font-size: 35px;
         color: #05ff5d;
-        padding: 0 60px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .title-container p{
         padding: 0 60px;
         font-size: 12px;
+       
     }
     
+}
+
+@media screen and (max-width: 634px) {
+    .title-container h2{
+        font-size: 25px;
+        color: #05ff5d;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .title-container p{
+        margin-left: -10px;
+        padding: 0 30px;
+        font-size: 9px;
+        padding-left: 15%;
+        padding-right: 10%;
+    }
 }
 
 
