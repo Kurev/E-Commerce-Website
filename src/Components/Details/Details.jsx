@@ -11,7 +11,7 @@ const Details = () => {
   const [showCaption, setShowCaption] = useState(false);
 
   return (
-    <div className='detail-container'>
+    <motion.div className='detail-container'>
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial='hidden'
@@ -77,22 +77,7 @@ const Details = () => {
         variants={fadeIn("left", 0.2)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{ once: false, amount: 0.5 }} // Adjust amount for mobile devices
-        onScrollCapture={() => {
-          const element = document.querySelector('.context-container');
-          const bounding = element.getBoundingClientRect();
-          
-          if (
-            bounding.top >= 0 &&
-            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-          ) {
-            // Element is in view
-            element.classList.add('in-view');
-          } else {
-            // Element is out of view
-            element.classList.remove('in-view');
-          }
-        }}
+        viewport={{once: false, amount: window.innerWidth < 700 ? 0.2 : 0.7}}
       
         className="context-container">
             <h1>Artistry<FaHammer className='hammer'/></h1>
@@ -102,7 +87,7 @@ const Details = () => {
             <p><h4>Assembling:</h4> Combining pieces meticulously to create the final structure.</p>
             <p><h4>Finishing:</h4> Polishing and refining for a flawless and attractive finish.</p>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

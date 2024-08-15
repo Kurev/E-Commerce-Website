@@ -25,16 +25,19 @@
 }
 
 @media screen and (max-width: 830px) {
+    .title-container h2{
+        font-size: 45px;
+        color: #05ff5d;
+        padding: 0 60px;
+    }
+
     .title-container p{
-        font-size: 17px;
+        padding: 0 60px;
+        font-size: 12px;
     }
     
 }
 
-@media screen and (max-width: 830px) {
-    .title-container p{
-        font-size: 12px;
-    }
-}
+
 
 
