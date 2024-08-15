@@ -77,12 +77,27 @@ const Details = () => {
         variants={fadeIn("left", 0.2)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
+        viewport={{ once: false, amount: 0.5 }} // Adjust amount for mobile devices
+        onScrollCapture={() => {
+          const element = document.querySelector('.context-container');
+          const bounding = element.getBoundingClientRect();
+          
+          if (
+            bounding.top >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+          ) {
+            // Element is in view
+            element.classList.add('in-view');
+          } else {
+            // Element is out of view
+            element.classList.remove('in-view');
+          }
+        }}
       
         className="context-container">
             <h1>Artistry<FaHammer className='hammer'/></h1>
             <p><h4>Designing:</h4> Conceptualizing the piece with sketches and detailed plans.</p>
-            <p><h4>Selecting Materials:</h4> Choosing high-quality materials for durability and aesthetics.</p>
+            <p><h4>Materials:</h4> Choosing high-quality materials for durability and aesthetics.</p>
             <p><h4>Shaping:</h4> Cutting and shaping materials to the desired form.</p>
             <p><h4>Assembling:</h4> Combining pieces meticulously to create the final structure.</p>
             <p><h4>Finishing:</h4> Polishing and refining for a flawless and attractive finish.</p>

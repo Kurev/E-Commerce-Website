@@ -9,8 +9,18 @@
     flex-wrap: wrap;
 }
 
+.cont-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
 .contact-col{
     flex-basis: 48%;
+    margin-top: 30px;
 }
 
 
@@ -20,8 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-left: 80px;
 }
 
 .contact form input, .contact form textarea{
@@ -42,11 +50,10 @@
     margin: 20px 0;
 }
 
-.title h1{
+.cont-title h1{
     color: #05ff5d;
     font-size: 40px;
-    margin-left: 73px;
-    margin-top: -60px;
+    
 }
 
 .contact-image{
@@ -63,9 +70,6 @@
     
 }
 
-.sub-text{
-    margin-left: 60px;
-}
 
 .contact-image .social-conatct{
     margin-top: -404px;
@@ -96,30 +100,65 @@
     padding-right: 30px;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1100px) {
+
+    
     .contact{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
     }
 
     .cont-container{
-        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cont-title h1{
+        color: #05ff5d;
+        font-size: 30px;
+        
+    }
+
+
+    .contact{
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .cont-title{
-        width: 100%;
+    .cont-container{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        margin-left: 30px;
+        justify-content: center;
+        margin-left: 5px;
+        margin-top: -100px;
+    }
+    .contact-image .social-conatct{
+        margin-top: -404px;
+        width: 300px;
+        height: 400px;
+        padding: 30px 0px 0px 30px;
+        font-size: 15px;
+    }
+
+    .contact-image .con-image{
+        border-radius: 20px;
+        width: 300px;
+        height: 400px;
+        
+    }
+
+    .cont-info{
+        font-size: 12px;
     }
 }
 
