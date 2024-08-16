@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Details.css';
-import detail from '../../assets/detail.png';
+import detail  from '../../assets/detail.png';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaHammer } from "react-icons/fa";
 import { fadeIn } from '../../animations/FadeIn'

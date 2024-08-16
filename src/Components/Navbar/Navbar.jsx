@@ -3,6 +3,7 @@ import './Navbar.css'
 import { motion, AnimatePresence} from 'framer-motion'
 import { easeIn } from 'framer-motion/dom'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -23,26 +24,56 @@ const Navbar = () => {
     <nav className={`${sticky ? 'dark-nav' : ''}`}>
         <a href="" className='logo'>FurniShop</a>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          <AnimatePresence> 
-            <motion.li
-              whileHover={{
-               scale: 1.1,
-               opacity: 1,
-               transition: {
-                duration: 0.3,
-                ease: 'linear'
-              }
-              }}
-
-              exit={{
+          <AnimatePresence>
+            <Link to='/'>
+              <motion.li
+                whileHover={{
+                scale: 1.1,
+                opacity: 1,
+                color: 'white',
                 transition: {
-                  duration: 4,
-                  ease: 'easeInOut'
+                  duration: 0.3,
+                  ease: 'linear'
                 }
-              }}
+                }}
 
-            >Home
-            </motion.li>
+                exit={{
+                  transition: {
+                    duration: 4,
+                    ease: 'easeInOut'
+                  }
+                }}
+
+              >Home
+              </motion.li>
+            </Link>
+            
+          </AnimatePresence>
+
+          <AnimatePresence>
+            <Link to='ProductPage'>
+              <motion.li
+                whileHover={{
+                scale: 1.1,
+                opacity: 1,
+                color: 'white',
+                transition: {
+                  duration: 0.3,
+                  ease: 'linear'
+                }
+                }}
+
+                exit={{
+                  transition: {
+                    duration: 4,
+                    ease: 'easeInOut'
+                  }
+                }}
+
+              >Product
+              </motion.li>
+            </Link>
+            
           </AnimatePresence>
 
           <AnimatePresence> 
@@ -50,28 +81,7 @@ const Navbar = () => {
               whileHover={{
                scale: 1.1,
                opacity: 1,
-               transition: {
-                duration: 0.3,
-                ease: 'linear'
-              }
-              }}
-
-              exit={{
-                transition: {
-                  duration: 4,
-                  ease: 'easeInOut'
-                }
-              }}
-
-            >Product
-            </motion.li>
-          </AnimatePresence>
-
-          <AnimatePresence> 
-            <motion.li
-              whileHover={{
-               scale: 1.1,
-               opacity: 1,
+               color: 'white',
                transition: {
                 duration: 0.3,
                 ease: 'linear'
@@ -94,6 +104,7 @@ const Navbar = () => {
               whileHover={{
                scale: 1.1,
                opacity: 1,
+               color: 'white',
                transition: {
                 duration: 0.3,
                 ease: 'linear'

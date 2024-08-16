@@ -1,11 +1,16 @@
 @media screen and (max-width: 600px) {
-    .container {
+    .ProductPage-Container {
         overflow-x: hidden;
     }
 }
 
 @media screen and (max-width: 1060px) {
-    .container {
+    .ProductPage-Container {
         overflow-x: hidden;
     }
+}
+
+
+.PaddingAllProductPage{
+    padding: 0 10%;
 }
