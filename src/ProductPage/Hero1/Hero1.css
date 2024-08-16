@@ -14,7 +14,7 @@
     object-fit: cover;
     border-radius: 10px;
     margin-top: -140px;
-    
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.51);
 }
 
 .gradient-color{
@@ -27,5 +27,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40%;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    gap: 30%;
+    padding: 0 50px;
+}
+
+.gradient-color .text-container{
+    font-size: 35px;
+    text-align: center;
+    width: 600px;
+    color: white;
+}
+
+.gradient-color .sale-container{
+    border-radius: 10px;
+    background-color:  #05ff5d;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-left: -90px;
+}
+
+.three-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    position: relative;
+    margin-top: -50px;
+    padding: 0 45px;
+}
+
+.boxDesign1, .boxDesign2, .boxDesign3, .boxDesign4{
+    width: 60px;
+    height: 75px;
+    background-color: #05ff5d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+.boxDesign1, .boxDesign2, .boxDesign3, .boxDesign4{
+    transition: transform 0.3s ease;
+}
+
+.boxDesign1:hover ,.boxDesign2:hover, .boxDesign3:hover, .boxDesign4:hover{
+    transform: translateY(-30px);
 }

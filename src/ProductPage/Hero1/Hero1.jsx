@@ -15,7 +15,13 @@ const Hero1 = () => {
         <div className="sale-container">
           <h1>Sale%</h1>
         </div>
-        
+      </div>
+
+      <div className="three-box">
+        <div className='boxDesign1'><h1>G</h1></div>
+        <div className='boxDesign2'><h1>R</h1></div>
+        <div className='boxDesign3'><h1>A</h1></div>
+        <div className='boxDesign4'><h1>B</h1></div>
       </div>
       
     </div>

@@ -1,0 +1,26 @@
+.Product-Navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -180px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+
+.Product-Navbar h1{
+    color: #05ff5d;
+}
+
+.Product-Navbar ul{
+    display: flex;
+    gap: 70px;
+}
+
+.Product-Navbar ul li {
+    font-size: 17px;
+    font-weight: 300;
+}
