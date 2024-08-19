@@ -1,0 +1,95 @@
+/* Container for the entire product list */
+/* Container for the entire product list */
+.mainContainerCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    list-style-type: none;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Container for each product card */
+.card-container {
+    width: 300px; /* Adjust the width to fit 3 items in a row */
+    margin-bottom: 20px;
+    background-color: #ffffff4f; /* Light gray background */
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover{
+    transform: translateY(-30px);
+}
+
+/* Image styling */
+.imageTable img {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Title styling */
+.tableTitle h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: #072413;
+}
+
+/* Price and icon styling */
+.priceAndIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    color: #05260F;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    
+}
+
+.heart-icon{
+    color: #FF0000;
+}
+
+.priceAndIcon p {
+    margin: 0;
+}
+
+/* Discounted price styling */
+.discountedPrice {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    color: #00000061; /* Red color for discount */
+    padding: 10px;
+    gap: 20px;
+}
+
+.discountedPrice p {
+    margin: 0;
+}
+
+.percentage{
+    font-weight: 400;
+    color: black;
+}
+.TableTitle{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 25px;
+}
