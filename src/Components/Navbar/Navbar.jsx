@@ -51,7 +51,7 @@ const Navbar = () => {
           </AnimatePresence>
 
           <AnimatePresence>
-            <Link to='ProductPage'>
+            <Link to='/ProductPage'>
               <motion.li
                 whileHover={{
                 scale: 1.1,
