@@ -93,3 +93,16 @@
     margin-top: 30px;
     font-size: 25px;
 }
+
+
+@media screen and (max-width: 930px) {
+    .card-container {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .card-container {
+        width: 235px;
+    }
+}

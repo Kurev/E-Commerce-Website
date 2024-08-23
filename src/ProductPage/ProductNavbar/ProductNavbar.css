@@ -23,3 +23,32 @@
     font-size: 17px;
     font-weight: 300;
 }
+
+@media screen and (max-width: 714px) {
+    .Product-Navbar ul{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .Product-Navbar ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+        
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .Product-Navbar ul{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .Product-Navbar ul{
+        gap: 15px;
+    }
+}

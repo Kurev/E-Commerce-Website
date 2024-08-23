@@ -10,6 +10,12 @@
     }
 }
 
+@media screen and (max-width: 930px) {
+    .PaddingAllProductPage{
+        padding: 0 0px;
+    }
+}
+
 
 .PaddingAllProductPage{
     padding: 0 10%;
