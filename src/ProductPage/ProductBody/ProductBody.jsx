@@ -30,7 +30,7 @@ import { FaRegHeart, FaHeart } from 'react-icons/fa';
 const ProductBody = () => {
     // Initialize state with each product's favorite status
     const [favorites, setFavorites] = useState(
-        Array(18).fill(false)
+        Array(24).fill(false)
     );
 
     // Toggle favorite status

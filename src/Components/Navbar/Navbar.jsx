@@ -25,7 +25,7 @@ const Navbar = () => {
         <a href="" className='logo'>FurniShop</a>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <AnimatePresence>
-            <Link to='/'>
+            <Link to='/' className='link'>
               <motion.li
                 whileHover={{
                 scale: 1.1,
@@ -51,7 +51,7 @@ const Navbar = () => {
           </AnimatePresence>
 
           <AnimatePresence>
-            <Link to='/ProductPage'>
+            <Link to='/ProductPage' className='link'>
               <motion.li
                 whileHover={{
                 scale: 1.1,

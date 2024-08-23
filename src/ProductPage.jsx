@@ -9,6 +9,7 @@ const ProductPage = () => {
   return (
     <div className='ProductPage-Container'>
         <Navbar />
+        
         <div className="PaddingAllProductPage">
           <Hero1 />
           <ProductNavbar />

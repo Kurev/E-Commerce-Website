@@ -10,7 +10,6 @@ const ProductNavbar = () => {
             <li>Chairs</li>
             <li>Cabinets</li>
             <li>Beds</li>
-            <li>Doors</li>
         </ul>
     </div>
   )

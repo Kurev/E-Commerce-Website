@@ -20,8 +20,12 @@ a{
     font-size: 25px;
 }
 
+.link{
+    font-size: 15px;
+}
 
-nav ul li {
+
+nav ul li{
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
@@ -60,6 +64,10 @@ nav ul li {
         font-size: 13px;
     }
 
+    .link{
+        font-size: 15px;
+    }
+
     
 }
 
@@ -77,12 +85,20 @@ nav ul li {
         margin-left: 35px;
         font-size: 18px;
     }
+
+    .link{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 900px) {
     nav ul li{
         margin-left: 30px;
         font-size: 12px;
+    }
+
+    .link{
+        font-size: 11px;
     }
 }
 
@@ -112,6 +128,10 @@ nav ul li {
         
     }
 
+    .link{
+        font-size: 15px;
+    }
+
     .menu-icon{
         display: block;
         font-size: 30px;
@@ -131,5 +151,9 @@ nav ul li {
 
     .menu-icon{
         font-size: 20px;
+    }
+
+    .link{
+        font-size: 15px;
     }
 }
