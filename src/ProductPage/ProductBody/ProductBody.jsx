@@ -24,7 +24,6 @@ import bed3 from '../../assets/bed3.png';
 import bed4 from '../../assets/bed4.png';
 import bed5 from '../../assets/bed5.png';
 import bed6 from '../../assets/bed6.png';
-
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 
 const ProductBody = () => {
