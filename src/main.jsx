@@ -4,10 +4,12 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ProductPage from './ProductPage.jsx'
+import FavoritePage from './FavoritePage.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
-  {path: '/ProductPage', element: <ProductPage />}
+  {path: '/ProductPage', element: <ProductPage />},
+  {path: '/FavoritePage', element: <FavoritePage />}
 ])
   
 

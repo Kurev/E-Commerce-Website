@@ -1,0 +1,16 @@
+.fovoriteCart{
+    margin-top: 100px;
+    height: 50vh;
+}
+
+.FavoriteTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.delete-button{
+    margin-bottom: 10px;
+}

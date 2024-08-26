@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductBody.css';
 import table1 from '../../assets/tables1.png';
 import table2 from '../../assets/Table2.png';
@@ -27,18 +27,29 @@ import bed6 from '../../assets/bed6.png';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 
 const ProductBody = () => {
-    // Initialize state with each product's favorite status
-    const [favorites, setFavorites] = useState(
-        Array(24).fill(false)
-    );
+    const initialFavorites = JSON.parse(localStorage.getItem('favorites')) || Array(24).fill(false);
+    const initialCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const [favorites, setFavorites] = useState(initialFavorites);
+    const [cart, setCart] = useState(initialCart);
 
-    // Toggle favorite status
-    const toggleFavorite = (index) => {
-        setFavorites(prevFavorites =>
-            prevFavorites.map((isFavorite, i) =>
-                i === index ? !isFavorite : isFavorite
-            )
+    useEffect(() => {
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [favorites, cart]);
+
+    const toggleFavorite = (index, product) => {
+        const newFavorites = favorites.map((isFavorite, i) =>
+            i === index ? !isFavorite : isFavorite
         );
+
+        setFavorites(newFavorites);
+
+        if (!favorites[index]) {
+            setCart([...cart, product]);
+        } else {
+            const newCart = cart.filter((item) => item.image !== product.image);
+            setCart(newCart);
+        }
     };
 
     const TableImages = [
@@ -231,7 +242,7 @@ const ProductBody = () => {
                 <li key={index}>
                     <div className='card-container'>
                         <div className="imageTable">
-                            <img src={product.image} alt="" />
+                            <img src={product.image} alt={product.title} />
                         </div>
                         <div className="tableTitle">
                             <h3>{product.title}</h3>
@@ -240,7 +251,7 @@ const ProductBody = () => {
                             <p>{product.discounted}</p>
                             <p
                                 className='heart-icon'
-                                onClick={() => toggleFavorite(startIndex + index)}
+                                onClick={() => toggleFavorite(startIndex + index, product)}
                             >
                                 {favorites[startIndex + index] ? <FaHeart /> : <FaRegHeart />}
                             </p>
@@ -254,7 +265,6 @@ const ProductBody = () => {
             ))}
         </ul>
     );
-
 
 
     return (

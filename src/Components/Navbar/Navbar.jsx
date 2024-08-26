@@ -76,27 +76,29 @@ const Navbar = () => {
             
           </AnimatePresence>
 
-          <AnimatePresence> 
-            <motion.li
-              whileHover={{
-               scale: 1.1,
-               opacity: 1,
-               color: 'white',
-               transition: {
-                duration: 0.3,
-                ease: 'linear'
-              }
-              }}
-
-              exit={{
+          <AnimatePresence>
+            <Link to='/FavoritePage' className='link'>
+              <motion.li
+                whileHover={{
+                scale: 1.1,
+                opacity: 1,
+                color: 'white',
                 transition: {
-                  duration: 4,
+                  duration: 0.3,
                   ease: 'linear'
                 }
-              }}
+                }}
 
-            >Favorites
-            </motion.li>
+                exit={{
+                  transition: {
+                    duration: 4,
+                    ease: 'linear'
+                  }
+                }}
+
+              >Favorites
+              </motion.li>
+            </Link>
           </AnimatePresence>
 
           <AnimatePresence> 
