@@ -11,6 +11,9 @@ const FavoritePage = () => {
         <div className="PaddingFavorite">
           <FavoriteContainer />
         </div>
+        <div className="footer">
+          <Footer />
+        </div>
         
     </div>
   )
