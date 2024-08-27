@@ -4,6 +4,7 @@ import detail  from '../../assets/detail.png';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaHammer } from "react-icons/fa";
 import { fadeIn } from '../../animations/FadeIn'
+import { Link } from 'react-router-dom';
 
 
 
@@ -64,7 +65,10 @@ const Details = () => {
                             className="details">
                                 <p>Durable, versatile table perfect for enhancing any kitchen or dining area with convenience and style.</p>
                                 <p className='price'>₱4,500</p>
-                                <button>Visit</button>
+                                <Link to='/ProductPage'>
+                                  <button>Visit</button>
+                                </Link>
+                                
                           </motion.div>
                       </AnimatePresence>
                           

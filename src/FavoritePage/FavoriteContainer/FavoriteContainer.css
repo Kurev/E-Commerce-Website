@@ -13,4 +13,10 @@
 
 .delete-button{
     margin-bottom: 10px;
+    background-color: #ff0000d1;
+}
+
+.delete-button:hover{
+    transition: 0.5s;
+    background-color: #fe5959;
 }

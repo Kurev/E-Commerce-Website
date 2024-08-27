@@ -22,7 +22,9 @@ const Navbar = () => {
 
   return (
     <nav className={`${sticky ? 'dark-nav' : ''}`}>
+      <Link to='/'>
         <a href="" className='logo'>FurniShop</a>
+      </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <AnimatePresence>
             <Link to='/' className='link'>
