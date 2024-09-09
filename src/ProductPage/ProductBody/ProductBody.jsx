@@ -269,16 +269,16 @@ const ProductBody = () => {
 
     return (
         <div>
-           <h1 className='TableTitle'>Tables</h1>
+           <h1 id='tables-section' className='TableTitle'>Tables</h1>
             {ProductList(TableImages, 0)}
 
-            <h1 className='TableTitle'>Chairs</h1>
+            <h1 id='chairs-section' className='TableTitle'>Chairs</h1>
             {ProductList(ChairImages, TableImages.length)}
 
-            <h1 className='TableTitle'>Cabinets</h1>
+            <h1 id='cabinets-section' className='TableTitle'>Cabinets</h1>
             {ProductList(CabinetImages, TableImages.length + ChairImages.length)}
 
-            <h1 className='TableTitle'>Beds</h1>
+            <h1 id='beds-section' className='TableTitle'>Beds</h1>
             {ProductList(BedImages, TableImages.length + ChairImages.length + CabinetImages.length)}
 
         </div>

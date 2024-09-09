@@ -13,11 +13,12 @@ nav {
     
 }
 
-a{
+.logo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     color: #ffffff;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .link{
@@ -37,6 +38,20 @@ nav ul li{
     font-optical-sizing: auto;
     color: rgb(0, 0, 0);
     
+}
+
+.fix-con{
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(0, 0, 0);
+}
+
+.fix-con:hover{
+    color: white;
+    transition: 0.3s;
 }
 
 .dark-nav{
@@ -64,6 +79,10 @@ nav ul li{
         font-size: 13px;
     }
 
+    .fix-con{
+        font-size: 13px;
+    }
+
     .link{
         font-size: 15px;
     }
@@ -86,6 +105,10 @@ nav ul li{
         font-size: 18px;
     }
 
+    .fix-con{
+        font-size: 18px;
+    }
+
     .link{
         font-size: 15px;
     }
@@ -94,6 +117,10 @@ nav ul li{
 @media screen and (max-width: 900px) {
     nav ul li{
         margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .fix-con{
         font-size: 12px;
     }
 

@@ -1,7 +1,8 @@
-import React from 'react'
-import './ProductNavbar.css'
+import React from 'react';
+import './ProductNavbar.css';
 import { fadeIn } from '../../animations/FadeIn';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll
 
 const ProductNavbar = () => {
   return (
@@ -13,13 +14,49 @@ const ProductNavbar = () => {
         className='Product-Navbar'>
           <h1>Category</h1>
           <ul>
-              <li>Tables</li>
-              <li>Chairs</li>
-              <li>Cabinets</li>
-              <li>Beds</li>
+              <li>
+                <ScrollLink
+                  to='tables-section' // This ID should match the target element in ProductBody
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  Tables
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to='chairs-section'
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  Chairs
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to='cabinets-section'
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  Cabinets
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to='beds-section'
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
+                  Beds
+                </ScrollLink>
+              </li>
           </ul>
     </motion.div>
   )
 }
 
-export default ProductNavbar
+export default ProductNavbar;

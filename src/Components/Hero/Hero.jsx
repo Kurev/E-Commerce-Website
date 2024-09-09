@@ -6,7 +6,7 @@ import { fadeIn } from '../../animations/FadeIn';
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='hero'>
       <div className="hero-text">
         <motion.h1
           variants={fadeIn("up", 0.2)}

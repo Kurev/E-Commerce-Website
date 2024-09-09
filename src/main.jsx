@@ -8,6 +8,7 @@ import FavoritePage from './FavoritePage.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
+  {path: '/logo', element: <App />},
   {path: '/ProductPage', element: <ProductPage />},
   {path: '/FavoritePage', element: <FavoritePage />}
 ])
