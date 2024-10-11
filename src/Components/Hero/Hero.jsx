@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../animations/FadeIn';
 
 const Hero = () => {
-  return (
+  return (  
     <div className='hero' id='hero'>
       <div className="hero-text">
         <motion.h1
